@@ -43,6 +43,11 @@ module.exports = {
       accounts: [process.env.PRIVATE_KEY],
     },
 
+    shardeum: {
+      url: "https://liberty20.shardeum.org/",
+      accounts: [process.env.PRIVATE_KEY]
+    },
+
     //polygon, bsc, eth
     polygon: {
       url: "https://polygon-rpc.com",
