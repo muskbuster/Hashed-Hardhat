@@ -12,9 +12,17 @@ async function main() {
 
   console.log("Deploying contracts with the account:", deployer.address);
 
-  const Minter = await hre.ethers.getContractFactory("MyToken");
-  const deploymentMinter = await Minter.deploy();
-  await deploymentMinter.deployed();
+  console.log("Account balance:", (await deployer.getBalance()).toString());
 
-  console.log("Your contract address:", deploymentMinter.address);
+  const Token = await ethers.getContractFactory("MyToken");
+  const token = await Token.deploy();
+
+  console.log("Token address:", token.address);
 }
+
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
