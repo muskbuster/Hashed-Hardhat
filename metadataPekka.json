@@ -1,0 +1,18 @@
+{
+    "title": "Shm dNFTs",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "P.E.K.K.A"
+        },
+        "description": {
+            "type": "string",
+            "description": "A heavily armored, slow melee fighter. Swings from the hip but packs a huge punch"
+        },
+        "image": {
+            "type": "string",
+            "description": "ipfs://QmVDud1chL8oFZsGzycCAq5Sfj6Bt9beqE1hJuVqPahan7"
+        }
+    }
+}

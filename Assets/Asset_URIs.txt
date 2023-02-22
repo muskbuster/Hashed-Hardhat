@@ -1,0 +1,6 @@
+ipfs://QmZHfXfpuqFJMLV8GZhHMLmNeZ5t2vzHjvZ88Pvi6qQoqo -pekka
+ipfs://QmNkRDn61CndVLxe89TrcigvbL5qEmU4p8YjW8tZX3k7iY -superpekka
+ipfs://QmfLv3E591E8AcMCb7cCKrQsSxpbw5SVjvroY7G8mzQgRu -hogrider
+ipfs://QmaT3Q4R9FU5RSZSg6FGuK1TBnvutSmkhahWznzg6MCYfC -hogglider
+ipfs://QmaT3Q4R9FU5RSZSg6FGuK1TBnvutSmkhahWznzg6MCYfC -Valkyrie
+ipfs://QmX328R7rwhQuxVt5V6Nm6AtvHfWWgDc31pzAKD7HZsdEJ -superValkyrie
