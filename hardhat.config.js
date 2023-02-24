@@ -22,7 +22,7 @@ module.exports = {
       ],
     },
     shardeum: {
-      url: "https://liberty20.shardeum.org/",
+      url: "https://sphinx.shardeum.org/",
       accounts: [process.env.PRIVATE_KEY]
     },
 
