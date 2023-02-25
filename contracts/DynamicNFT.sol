@@ -7,8 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract MyToken is ERC721, ERC721URIStorage, Ownable {
     constructor() ERC721("ClashOfClans", "COC") {}
-    uint256 public constant UPGRADE_PRICE = 1 ether;
-    uint256 public constant UPGRADE_DELAY = 1 days;
+
 
     struct NFT {
         string name;
@@ -30,7 +29,7 @@ function SetDetails(string memory _name,uint8 character, uint8 level,string memo
         payable
     {
         //Can we add a reentry gaurd here ??
-        require(msg.value>1000000000000000 wei,"send proper value");
+        require(msg.value>1000000000000000 ,"send proper value");
        NFT memory data= characters[character];
        string memory uri=data.baseURI;
        require(data.level==1,"u can mint only level one character");
@@ -40,7 +39,7 @@ function SetDetails(string memory _name,uint8 character, uint8 level,string memo
 
     function PurchaseLevel(uint256 tokenId,uint8 character) public payable {
         //reentry gaurd here too
-        require(msg.value>10000000000000000 wei,"send proper value");
+        require(msg.value>10000000000000000 ,"send proper value");
          require(_exists(tokenId) == true, "Token does not exist");
           NFT memory data= characters[character];
           require(data.level==1,"already maxed out");
